@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Travel Destinations</title>
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/trip.js"></script>
+<script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+<div id="header">
+<h1>Popular Travel Destinations</h1>
+</div>
+
+<div id="navigation">
+<button id="themeToggle">🌙 Toggle Theme</button>
+<a href="index.html">Home</a> |
+<a href="destinations.html">Destinations</a> |
+<a href="contact.html">Contact</a>
+</div>
+
+<div id="content">
+
+<h2>Example Destinations</h2>
+
+<p>
+This page lists some well-known cities that many travelers enjoy visiting.
+Each destination offers unique culture, food, and historical landmarks.
+</p>
+
+<h2>Destination List</h2>
+
+
+
+<ul>
+<li><span class="city">Paris</span>, France</li>
+<li><span class="city">Tokyo</span>, Japan</li>
+<li><span class="city">Rome</span>, Italy</li>
+</ul>
+
+<h2>Destination Images</h2>
+
+<p>
+The images below rotate automatically using JavaScript to create a slideshow.
+This helps visitors quickly view several destinations without navigating to multiple pages.
+</p>
+
+<img src="images/paris.jpg" alt="Paris skyline" class="travel-image">
+<img src="images/tokyo.jpg" alt="Tokyo street" class="travel-image">
+<img src="images/rome.jpg" alt="Rome Colosseum" class="travel-image">
+
+<h2>Destination Information Table</h2>
+
+<table border="1">
+
+<tr>
+<th>City</th>
+<th>Country</th>
+<th>Known For</th>
+</tr>
+
+<tr>
+<td>Paris</td>
+<td>France</td>
+<td>Eiffel Tower</td>
+</tr>
+
+<tr>
+<td>Tokyo</td>
+<td>Japan</td>
+<td>Technology and culture</td>
+</tr>
+
+<tr>
+<td>Rome</td>
+<td>Italy</td>
+<td>Ancient history</td>
+</tr>
+
+</table>
+
+<h2>Travel Budget Planner</h2>
+
+<button id="togglePlanner">Show/Hide Planner</button>
+
+<div id="plannerSection">
+
+<p>Enter your travel details below:</p>
+
+<label>Trip Length (Days):</label><br>
+<input type="text" id="days" placeholder="e.g. 5"><br><br>
+
+<label>Daily Budget ($):</label><br>
+<input type="text" id="budget" placeholder="e.g. 150"><br><br>
+
+<label>Start Date:</label><br>
+<input type="text" id="date"><br><br>
+
+<button id="calculateBtn">Calculate Trip</button>
+
+<h3 id="result"></h3>
+<div id="breakdown"></div>
+
+</div>
+
+<h2>Explore Countries</h2>
+
+<p>Search for a country to view detailed travel information:</p>
+
+<input type="text" id="countryInput" placeholder="Enter country name" aria-label="Search country">
+<button id="searchCountry">Search</button>
+
+<div id="countryResult"></div>
+
+<h3>Currency Converter</h3>
+
+<input type="number" id="amount" placeholder="Enter amount (USD)">
+<button id="convertCurrency">Convert</button>
+<button id="clearResults">Clear</button>
+
+<div id="currencyResult"></div>
+
+<div id="footer">
+
+<p>
+Author: Mahmood Al Muntasir<br>
+Last Modified: March 2026
+</p>
+
+</div>
+
+</body>
+</html>
